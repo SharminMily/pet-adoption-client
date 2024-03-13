@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import PetsFeatures from "../PetsFeatures/PetsFeatures";
 import PetsHeathCheck from "../PetsHeathCheck/PetsHeathCheck";
 import SaleOff from "../SaleOff/SaleOff";
 import PetPresentations from "./PetPresentations/PetPresentations";
@@ -13,6 +14,7 @@ const Home = () => {
            <PetPresentations></PetPresentations>
            <SaleOff></SaleOff>
            <PetsHeathCheck></PetsHeathCheck>
+           <PetsFeatures></PetsFeatures>
         </>
     );
 };

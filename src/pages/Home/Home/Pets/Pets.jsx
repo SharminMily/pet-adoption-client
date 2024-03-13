@@ -5,9 +5,9 @@ import { HiOutlineArrowRight } from 'react-icons/hi';
 
 const Pets = () => {
   return (
-    <div className="mt-20 m-4">
+    <div className="md:mt-20 mt-4 md:m-4 m-2">
       <h1 className="text-center text-3xl  font-semibold mb-6">Lets Some <span className="text-fuchsia-700 font-bold">Pets </span>Info </h1>
-      <div className="grid lg:grid-cols-4 grid-cols-2  justify-center gap-4">
+      <div className="grid lg:grid-cols-4 grid-cols-2  justify-center md:gap-4 gap-1">
         {/* 1 */}
         <div className="">
           <Card className="max-w-sm bg-fuchsia-900">

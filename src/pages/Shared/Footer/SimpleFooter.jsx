@@ -14,15 +14,8 @@ const SimpleFooter = () => {
         <div className="w-full ">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 text-white">
             <div>
-              <Footer.Brand
-                href="https://flowbite.com"
-                src="https://flowbite.com/docs/images/logo.svg"
-                alt="Flowbite Logo"
-                name=""
-                className=""
-                
-              />
-              <p className="text-xl font-semibold">Pet Adoption</p>
+              <img className="w-10 h-10 rounded-full" src="https://i.ibb.co/p4z17sD/photo-1561948955-570b270e7c36-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-0.jpg" alt="" />
+              <p className="text-xl font-semibold uppercase">Pet Adoption</p>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
               <div>

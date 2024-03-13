@@ -1,10 +1,10 @@
 import { Card } from "flowbite-react";
 const PetPresentations = () => {
   return (
-    <div className="lg:m-20 m-10">
+    <div className="lg:m-20 md:m-10">
 
-        <h1 className="text-center text-fuchsia-800 font-bold text-2xl uppercase text-fuchsia-8 00 pb-3">Choosing the Right Companion for You</h1>
-        <p className="text-gray-500 flex justify-center items-center text-center mb-10">Pet Pals - is a concise presentation offering guidance on selecting the perfect pet companion. <br /> Learn about the needs and characteristics of various pets, from dogs and cats to small mammals and birds. <br /> Discover which pet best suits your lifestyle and embark on a rewarding journey of companionship.</p>
+        <h1 className="text-center text-fuchsia-800 font-bold text-2xl  uppercase text-fuchsia-8 00 pb-3 px-4">Choosing the Right Companion for You</h1>
+        <p className="text-gray-500 flex justify-center items-center text-center mb-10 px-6 md:text-base text-sm">Pet Pals - is a concise presentation offering guidance on selecting the perfect pet companion. <br /> Learn about the needs and characteristics of various pets, from dogs and cats to small mammals and birds. <br /> Discover which pet best suits your lifestyle and embark on a rewarding journey of companionship.</p>
       <div>
         <div className="mb-8">
      
@@ -22,18 +22,18 @@ const PetPresentations = () => {
                 <h1 className=" font-bold text-bold text-2xl pb-4">
                   A Guide to Responsible Pet Ownership
                 </h1>
-                <p className="text-gray-300">
+                <p className="text-gray-300 md:text-base text-sm">
                   Paws, Claws, and Feathers is a comprehensive presentation
                   designed to educate prospective pet owners on responsible pet
                   ownership. From dogs and cats to birds and reptiles, explore
                   the diverse world of pets and learn about their unique needs
                   and characteristics. Discover the importance of proper
                   nutrition, exercise, and socialization for your furry,
-                  feathered, or scaly friend.{" "}
+                  feathered, or scaly friend.
                 </p>
                 <br />
 
-                <p className="font-normal text-gray-300 dark:text-gray-400">
+                <p className="font-normal text-gray-300 dark:text-gray-400 md:text-base text-sm">
                   Gain insights into selecting the right pet for your lifestyle
                   and family dynamics, and understand the commitment involved in
                   providing a loving and nurturing home. Join us on this journey
@@ -55,7 +55,7 @@ const PetPresentations = () => {
                 <h1 className="text-white font-bold text-bold text-2xl pb-4">
                   A Guide to Responsible Pet Ownership
                 </h1>
-                <p className="text-gray-300">
+                <p className="text-gray-300 md:text-base text-sm">
                   Paws, Claws, and Feathers is a comprehensive presentation
                   designed to educate prospective pet owners on responsible pet
                   ownership. From dogs and cats to birds and reptiles, explore
@@ -66,7 +66,7 @@ const PetPresentations = () => {
                 </p>
                 <br />
 
-                <p className="font-normal text-gray-300 dark:text-gray-400">
+                <p className="font-normal text-gray-300 dark:text-gray-400 md:text-base text-sm">
                   Gain insights into selecting the right pet for your lifestyle
                   and family dynamics, and understand the commitment involved in
                   providing a loving and nurturing home. Join us on this journey
