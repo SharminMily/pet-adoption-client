@@ -4,36 +4,31 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const navOptions = (
        <>
-      <Link>
+      <li >
         
-        <NavLink className="text-white font-semibold text-lg hover:text-gray-200">
+        <NavLink to="/" className="text-white font-semibold text-lg hover:text-gray-200">
           Home
         </NavLink>
-      </Link>
-      <Link>
-        <Navbar.Link
-          className="text-gray-100 hover:text-gray-200 text-lg"
-          href="#"
-        >
-          All pets
-        </Navbar.Link>
-      </Link>
-      <Link>
-        <Navbar.Link
-          className="text-gray-100 hover:text-gray-200 text-lg"
-          href="#"
-        >
-          Contact
-        </Navbar.Link>
-      </Link>
-      <Link>
-        <Navbar.Link
-          className="text-gray-100 hover:text-gray-200 text-lg"
-          href="#"
-        >
-          Contact
-        </Navbar.Link>
-      </Link>
+      </li>
+
+      <li >        
+        <NavLink to="/allPets" className="text-white font-semibold text-lg hover:text-gray-200">
+          All Pets
+        </NavLink>
+      </li>
+
+      <li >        
+        <NavLink to="/dashboard" className="text-white font-semibold text-lg hover:text-gray-200">
+         Dashboard
+        </NavLink>
+      </li>
+
+      <li>        
+        <NavLink  to="/about" className="text-white font-semibold text-lg hover:text-gray-200">
+          about
+        </NavLink>
+      </li>
+   
     </>
   );
 

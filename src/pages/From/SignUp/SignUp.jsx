@@ -17,7 +17,7 @@ const SignUp = () => {
   }
 
   return (
-    <div className="my-20 bg-gray-200 p-20">
+    <div className="my-20 bg-gray-200 md:p-20">
       <div className="lg:flex justify-between gap-4">
         <div className="w-full">
           <img
@@ -78,16 +78,15 @@ const SignUp = () => {
                 <Checkbox id="remember" />
                 <Label htmlFor="remember">Remember me</Label>
               </div>
-              <Button
-                className="bg-fuchsia-900 hover:bg-fuchsia-950"
+              <button
+                className="bg-fuchsia-900 text-white font-semibold py-2 rounded-lg hover:bg-fuchsia-950"
                 type="submit"
               >
                 Submit
-              </Button>
+              </button>
             </form>
-            <p>
-              {" "}
-              Have a Account <Link to="/signIn">signIn</Link>
+            <p className="text-center">             
+              Create a Account <Link className="text-fuchsia-900 font-semibold text-lg" to="/signIn">signIn</Link>
             </p>
           </Card>
         </div>
