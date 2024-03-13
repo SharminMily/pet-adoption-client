@@ -6,10 +6,11 @@ import { HiOutlineArrowRight } from 'react-icons/hi';
 const Pets = () => {
   return (
     <div className="mt-20 m-4">
+      <h1 className="text-center text-3xl  font-semibold mb-6">Lets Some <span className="text-fuchsia-700 font-bold">Pets </span>Info </h1>
       <div className="grid lg:grid-cols-4 grid-cols-2  justify-center gap-4">
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-950">
+          <Card className="max-w-sm bg-fuchsia-900">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -35,7 +36,7 @@ const Pets = () => {
 
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-950">
+          <Card className="max-w-sm bg-fuchsia-900">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -59,7 +60,7 @@ const Pets = () => {
 
         {/* 3 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-950">
+          <Card className="max-w-sm bg-fuchsia-900">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -83,7 +84,7 @@ const Pets = () => {
 
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-950">
+          <Card className="max-w-sm bg-fuchsia-900">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img

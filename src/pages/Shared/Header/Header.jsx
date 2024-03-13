@@ -1,19 +1,14 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const navOptions = (
-    // <Navbar.Link className="text-gray-100 hover:text-gray-200 text-lg" href="#">Booking</Navbar.Link>
-    // <Navbar.Link className="text-gray-100 hover:text-gray-200 text-lg" href="#">Pricing</Navbar.Link>
-    // <Navbar.Link className="text-gray-100 hover:text-gray-200 text-lg" href="#">Contact</Navbar.Link>
-    <>
+       <>
       <Link>
-        <Navbar.Link
-          className="text-gray-100 hover:text-gray-200 text-lg"
-          href="#"
-        >
+        
+        <NavLink className="text-white font-semibold text-lg hover:text-gray-200">
           Home
-        </Navbar.Link>
+        </NavLink>
       </Link>
       <Link>
         <Navbar.Link
@@ -44,7 +39,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar className="bg-fuchsia-950" fluid rounded>
+      <Navbar className="bg-fuchsia-900" fluid rounded>
         <Navbar.Brand href="https://flowbite-react.com">
           <img
             src="https://i.ibb.co/p4z17sD/photo-1561948955-570b270e7c36-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-0.jpg"
@@ -78,8 +73,8 @@ const Header = () => {
             <Dropdown.Item>Sign out</Dropdown.Item>
           </Dropdown>
 
-          <Navbar className="text-gray-100 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center" href="#">
-            Login
+          <Navbar className="text-gray-100 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center" href="">
+            <Link to="/signUp">SignUp</Link>
           </Navbar>
 
           <Navbar.Toggle />
