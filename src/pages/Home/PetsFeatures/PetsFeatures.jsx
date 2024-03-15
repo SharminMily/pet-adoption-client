@@ -2,7 +2,7 @@ import { HiViewGrid } from "react-icons/hi";
 
 const PetsFeatures = () => {
   return (
-    <div className="m-10">
+    <div className="lg:mx-0 lg:my-10 m-8">
       <h1 className="text-center text-4xl font-semibold">
         Pets <span className="text-fuchsia-900 font-bold ">Features</span> Here
       </h1>

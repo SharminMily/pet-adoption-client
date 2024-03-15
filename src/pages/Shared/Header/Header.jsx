@@ -1,34 +1,66 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+
   const navOptions = (
-       <>
-      <li >
-        
-        <NavLink to="/" className="text-white font-semibold text-lg hover:text-gray-200">
+    <>
+      <li>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
+              : "text-white font-semibold text-base hover:text-gray-200"
+          }
+        >
           Home
         </NavLink>
       </li>
 
-      <li >        
-        <NavLink to="/allPets" className="text-white font-semibold text-lg hover:text-gray-200">
+      <li>
+        <NavLink
+          to="/allPets"
+          className={({ isActive }) =>
+            isActive
+              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
+              : "text-white font-semibold text-base hover:text-gray-200"
+          }
+        >
           All Pets
         </NavLink>
       </li>
 
-      <li >        
-        <NavLink to="/dashboard" className="text-white font-semibold text-lg hover:text-gray-200">
-         Dashboard
+      <li>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            isActive
+              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
+              : "text-white font-semibold text-base hover:text-gray-200"
+          }
+        >
+          Dashboard
         </NavLink>
       </li>
 
-      <li>        
-        <NavLink  to="/about" className="text-white font-semibold text-lg hover:text-gray-200">
+      <li>
+        <NavLink
+          to="/about"
+          className="text-white font-semibold text-lg hover:text-gray-200"
+        >
           about
         </NavLink>
       </li>
-   
     </>
   );
 
@@ -45,8 +77,9 @@ const Header = () => {
             PET ADOPTION
           </span>
         </Navbar.Brand>
+
         <div className="flex md:order-2">
-          <Dropdown
+          {/* <Dropdown
             arrowIcon={false}
             inline
             label={
@@ -66,13 +99,47 @@ const Header = () => {
             <Dropdown.Item>Dashboard</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
-          </Dropdown>
+          </Dropdown> */}
 
-          <Navbar className="text-gray-100 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center" href="">
-            <Link to="/signUp">SignUp</Link>
-          </Navbar>
+          {user?.email ? (
+            <>
+              <Dropdown
+                arrowIcon={false}
+                inline
+                label={
+                  <Avatar alt="User settings" img={user.photoURL} rounded />
+                }
+              >
+                <Dropdown.Header>
+                  <span className="block text-sm text-fuchsia-700 font-bold">
+                    {user?.displayName}
+                  </span>
+                  <span className="block truncate text-sm font-semibold mt-2">
+                    {user?.email}
+                  </span>
+                </Dropdown.Header>
+                <Link
+                  onClick={handleLogOut}
+                  className="font-semibold text-red-700"
+                >
+                  <Dropdown.Item className="text-red-500 text-base">
+                    logOut
+                  </Dropdown.Item>
+                </Link>
+              </Dropdown>
+            </>
+          ) : (
+            <>
+              <Navbar
+                className="text-gray-100 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center"
+                href=""
+              >
+                <Link to="/signUp">SignUp</Link>
+              </Navbar>
+            </>
+          )}
 
-          <Navbar.Toggle />
+          <Navbar.Toggle className="text-white ml-6 hover:bg-fuchsia-700 hover:text-sm" />
         </div>
         <Navbar.Collapse className="">{navOptions}</Navbar.Collapse>
       </Navbar>

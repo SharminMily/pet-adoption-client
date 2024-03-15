@@ -1,9 +1,37 @@
+import { useContext } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
+
 const SocialAccount = () => {
+
+    const {googleSignIn } = useContext(AuthContext);
+	const location = useLocation();
+    const navigate = useNavigate();
+
+
+    const handleGoogle = () => {  
+        googleSignIn()
+        .then(result => {
+            console.log(result.user);
+            // const userInfo = {
+            //     email: result.user?.email,
+            //     name: result.user?.displayName,
+            //     image: result.user?.photoURL
+            // }
+            // axiosPublic.post('/users', userInfo)
+            // .then(res => {
+            //     console.log(res.data);
+            //     navigate('/')
+            // })
+			navigate('/')
+        })
+    }
+
     return (
         <div>
             <div className="">
             <div>
-                <button className="w-full px-10 p-2 text-center bg- border-4  rounded-lg border-fuchsia-900 hover:text-white hover:bg-fuchsia-900">
+                <button  onClick={() => handleGoogle(googleSignIn)} className="w-full px-10 p-2 text-center bg- border-4  rounded-lg border-fuchsia-900 hover:text-white hover:bg-fuchsia-900">
                     Google
                 </button>
             </div>

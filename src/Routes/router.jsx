@@ -5,6 +5,7 @@ import AddPet from "../pages/AddPet/AddPet";
 import SignIn from "../pages/From/SignIn/SignIn";
 import SignUp from "../pages/From/SignUp/SignUp";
 import AllPets from "../pages/AllPets/AllPets";
+import Dashboard from "../Dashboard/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/allPets",
         element: <AllPets></AllPets>,
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard></Dashboard>,
       },
       
     ],

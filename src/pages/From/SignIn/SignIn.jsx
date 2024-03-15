@@ -2,21 +2,55 @@
 /* eslint-disable no-unused-vars */
 import { Button, Card, Checkbox, Label, TextInput } from "flowbite-react";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialAccount from "../SocialAccount/SocialAccount";
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const SignIn = () => {
+
+  const { singIn } = useContext(AuthContext)
+    const navigate = useNavigate()
+    const location = useLocation();
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
-  const navigate = useNavigate();
+
+
 
   const onSubmit = data => {
-    console.log(data)
+    // console.log(data)
+    singIn(data.email, data.password)
+    .then(result => {
+      const user = result.user;
+      console.log(user);
+      Swal.fire({
+          title: "User Login Successful",
+          showClass: {
+            popup: `
+              animate__animated
+              animate__fadeInUp
+              animate__faster
+            `
+          },
+          hideClass: {
+            popup: `
+              animate__animated
+              animate__fadeOutDown
+              animate__faster
+            `
+          }
+        });
+        navigate('/')
+  })
+
   }
+
 
   return (
     <div className="my-20 bg-gray-200 md:p-20">

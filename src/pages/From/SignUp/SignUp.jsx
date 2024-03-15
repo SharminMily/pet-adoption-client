@@ -1,9 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { Button, Card, Checkbox, Label, TextInput } from "flowbite-react";
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
+
+     const {createUser} = useContext(AuthContext);
   const {
     register,
     handleSubmit,
@@ -13,8 +18,31 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const onSubmit = data => {
-    console.log(data)
+    // console.log(data)
+    createUser(data.email, data.password)
+    .then(result => {
+        const loggedUser = result.user;
+        console.log(loggedUser)
+        // updateUserProfile(data.name, data.photoURL)
+        .then(() => {
+            console.log('user profile info updated')
+            reset();
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'User created successfully.',
+                showConfirmButton: false,
+                timer: 1500
+            });
+            navigate('/');
+
+        })
+        .catch(error => console.log(error))
+    })
+
   }
+
+
 
   return (
     <div className="my-20 bg-gray-200 md:p-20">

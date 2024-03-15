@@ -1,9 +1,11 @@
 const PetsHeathCheck = () => {
   return (
     <div className="my-20 mx-4">
-      <h1 className="text-center font-semibold text-4xl pb-10">
+      <h1 className="text-center font-semibold text-4xl pb-2">
         Pets <span className="text-fuchsia-800 font-bold">Heath</span> Check
       </h1>
+      <p className="text-center pb- text-gray-700">Regular health checks are essential for ensuring the well-being of pets. During these examinations, <br />veterinarians assess vital signs,  including temperature, heart rate, and respiratory rate. </p>
+      <p className="text-center pb-8 text-gray-700">They inspect the eyes, ears, mouth, and skin for any abnormalities. <br /> Additionally, they palpate the abdomen to check for any lumps or discomfort. </p>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-4">
         <div className="w-full shadow-lg shadow-slate-700 p-1 bg-fuchsia-800">

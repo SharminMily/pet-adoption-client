@@ -6,7 +6,10 @@ import { HiOutlineArrowRight } from 'react-icons/hi';
 const Pets = () => {
   return (
     <div className="md:mt-20 mt-4 md:m-4 m-2">
-      <h1 className="text-center text-3xl  font-semibold mb-6">Lets Some <span className="text-fuchsia-700 font-bold">Pets </span>Info </h1>
+      <h1 className="text-center text-3xl  font-semibold mb-2">Lets Some <span className="text-fuchsia-700 font-bold">Pets </span>Info </h1>
+      
+      <p className="text-center pb-8">Pets bring joy and companionship to our lives. Dogs, known for loyalty and playfulness, require regular exercise and training. <br /> Cats, independent and curious, thrive with proper nutrition and enrichment. Small pets like rabbits and guinea pigs <br />  need spacious enclosures and social interaction. Responsible care ensures a fulfilling life for all pets.</p>
+
       <div className="grid lg:grid-cols-4 grid-cols-2  justify-center md:gap-4 gap-1">
         {/* 1 */}
         <div className="">

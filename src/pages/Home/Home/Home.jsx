@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import ListPets from "../ListPets/ListPets";
 import PetsFeatures from "../PetsFeatures/PetsFeatures";
 import PetsHeathCheck from "../PetsHeathCheck/PetsHeathCheck";
 import SaleOff from "../SaleOff/SaleOff";
@@ -11,6 +12,7 @@ const Home = () => {
         <>
            <Banner></Banner>
            <Pets></Pets>
+           <ListPets></ListPets>
            <PetPresentations></PetPresentations>
            <SaleOff></SaleOff>
            <PetsHeathCheck></PetsHeathCheck>
