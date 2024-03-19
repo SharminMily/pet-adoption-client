@@ -14,6 +14,8 @@ const SignIn = () => {
     const navigate = useNavigate()
     const location = useLocation();
 
+    const from = location.state?.from?.pathname || "/";
+
   const {
     register,
     handleSubmit,
@@ -46,7 +48,7 @@ const SignIn = () => {
             `
           }
         });
-        navigate('/')
+        navigate(from, { replace: true })
   })
 
   }

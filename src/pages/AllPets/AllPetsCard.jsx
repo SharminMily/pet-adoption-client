@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Card } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 const AllPetsCard = ({ pet }) => {
   const {
+    _id,
     id,
     category,
     description,
@@ -76,12 +78,13 @@ const AllPetsCard = ({ pet }) => {
               Age: {petAge}
             </span>
 
-            <a
+            <Link to={`/allPets/${_id}`}>
+            <button
               href="#"
               className="rounded-lg bg-fuchsia-900 text-white px-3 py-2"
             >
-              Adopt
-            </a>
+              Adopt details
+            </button></Link>
 
           </div>
         </div>

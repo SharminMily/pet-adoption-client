@@ -8,12 +8,14 @@ import AllPets from "../pages/AllPets/AllPets";
 
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Dashboard from "../Layout/Dashboard";
-import Pets from "../pages/Home/Home/Pets/Pets";
+
 import AllDonations from "../pages/Dashboard/Dashboard/AdminDashboard/AllDonations";
 import AllUsers from "../pages/Dashboard/Dashboard/AdminDashboard/AllUsers";
 import ManageAllPets from "../pages/Dashboard/Dashboard/AdminDashboard/ManageAllPets";
 import Donation from "../pages/Donation/Donation";
 import DonationDetails from "../pages/Donation/DonationDetails";
+import AllPetsDetails from "../pages/AllPets/AllPetsDetails";
+import AddCard from "../pages/Dashboard/Dashboard/UsersDashboard/AddCard";
 
 
 const router = createBrowserRouter([
@@ -33,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: "/allPets",
         element: <AllPets></AllPets>,
+      },
+      {
+        path: "/allPets/:id",
+        element: <AllPetsDetails></AllPetsDetails>,
+        loader: ({ params }) => fetch(`http://localhost:5000/allPets/${params.id}`)
       },
       {
         path: "/donation",
@@ -74,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: "allUsers",
         element: <AllUsers></AllUsers>
+      },
+      {
+        path: "addCarts",
+        element: <AddCard></AddCard>
       },
     ]
   }

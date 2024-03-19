@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Checkbox, Table } from 'flowbite-react';
+import{ useEffect, useState } from 'react';
+import { Table } from 'flowbite-react';
 const AllDonations = () => {
     const [donations, setDonations] = useState([]);
 

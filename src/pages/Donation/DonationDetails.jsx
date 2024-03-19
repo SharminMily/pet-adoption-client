@@ -4,7 +4,6 @@ import { Card } from "flowbite-react";
 import { useState } from "react";
 import { Modal } from "flowbite-react";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
-import { Dropdown } from "flowbite-react";
 const DonationDetails = () => {
   const donation = useLoaderData();
   // console.log(donation);
@@ -97,41 +96,60 @@ const DonationDetails = () => {
           <Modal.Header />
           <Modal.Body>
             <div className="text-center">
-              <h1>{petName}</h1>
+              <h1 className="text-fuchsia-700 font-semibold text-xl">
+                {/* {category} : {petName} */}
+              </h1>
 
               <form className="flex max-w-md flex-col gap-4">
                 <div>
                   <div className="mb-2 block">
-                    <Label htmlFor="email1" value="Your email" />
+                    <Label htmlFor="" value="Your Donations Amount " />
                   </div>
-                  <TextInput
-                    id="email1"
-                    type="email"
-                    placeholder="Donations Amount"
+                 <div>
+                 <TextInput
+                    id="name"
+                    type="taxt"
+                    value={petImage}
+                    placeholder="Donations Amount $00"
                     required
                   />
-                </div>
-                <div>
-                  {/* <div className="mb-2 block">
-                    <Label htmlFor="password1" value="" />
+                 </div>
+                 <div className="pt-4">
+                 <TextInput
+                    id="name"
+                    type="taxt"
+                    value={petName}
+                    placeholder="Donations Amount $00"
+                    required
+                  />
+                 </div>
+                  <div className="pt-4">
+                  <TextInput
+                    id="number"
+                    type="number"
+                    placeholder="Donations Amount $00"
+                    required
+                  />
                   </div>
-                  <TextInput id="password1" type="password" required 
-                  
-                   /> */}
-                    <Dropdown className="border" label="Dropdown" inline>
-                    <Dropdown.Item>Dashboard</Dropdown.Item>
-                    <Dropdown.Item>Settings</Dropdown.Item>
-                    <Dropdown.Item>Earnings</Dropdown.Item>
-                    <Dropdown.Item>Sign out</Dropdown.Item>
-                  </Dropdown>
                  
-                </div>
+                  <input className="w-full mt-0 rounded-lg"  /> 
+                    <select className="w-full rounded-lg border border-gray-500 ">
+                      <option value="female">Card</option>
+                      <option value="male">Mastercard</option>
+                      <option value="other">Maestro</option>
+                      <option value="other">JCB</option>
+                      <option value="other">Other</option>
+                    </select>  
+
                 <button
-                  className="bg-fuchsia-900 text-white font-semibold py-2 rounded-lg hover:bg-fuchsia-950"
+                  className="bg-fuchsia-900 w-full mt-3 text-white font-semibold py-2 rounded-lg hover:bg-fuchsia-950"
                   type="submit"
                 >
                   Submit
                 </button>
+
+                </div>
+               
               </form>
             </div>
           </Modal.Body>
