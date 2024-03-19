@@ -10,7 +10,7 @@ const AllPets = () => {
       .then((data) => setPets(data));
   }, []);
 
-  console.log(pets);
+  // console.log(pets);
   return (
     <div>
      <h1 className="text-3xl text-fuchsia-900 font-semibold text-center m-10">All Pets Here</h1>

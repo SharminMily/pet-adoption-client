@@ -42,6 +42,19 @@ const Header = () => {
 
       <li>
         <NavLink
+          to="/donation"
+          className={({ isActive }) =>
+            isActive
+              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
+              : "text-white font-semibold text-base hover:text-gray-200"
+          }
+        >
+         Donations
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
           to="/dashboard"
           className={({ isActive }) =>
             isActive
@@ -134,7 +147,7 @@ const Header = () => {
                 className="text-gray-100 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center"
                 href=""
               >
-                <Link to="/signUp">SignUp</Link>
+                <Link to="/signIn">SignIn</Link>
               </Navbar>
             </>
           )}

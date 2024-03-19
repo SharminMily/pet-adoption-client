@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AllPetsCard from "../../AllPets/AllPetsCard";
+import DonationCard from "../../Donation/DonationCard";
 
-const ListPets = () => {
+const ListDonation = () => {
 
-    const [pets, setPets] = useState([]);
+    const [donations, setDonations] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:5000/allPets")
+      fetch("http://localhost:5000/donations")
         .then((res) => res.json())
-        .then((data) => setPets(data));
+        .then((data) => setDonations(data));
     }, []);
   
     // console.log(pets);
@@ -16,18 +17,18 @@ const ListPets = () => {
     return (
         <div>
             <h1 className="text-center font-bold text-3xl mt-16">
-        <span className="text-fuchsia-700">Pets</span> List Here
+        <span className="text-fuchsia-700">Donations</span> List Here
       </h1>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-2 gap-4 my-8 md:p-2 p-4 mb-0 mx-0">
-        {pets.slice(0, 4).map((pet) => (
-          <AllPetsCard
-            key={pet.id}
-            pet={pet}
-          ></AllPetsCard>
+        {donations.slice(0, 4).map((donation) => (
+          <DonationCard
+            key={donation.id}
+            donation={donation}
+          ></DonationCard>
         ))}
       </div>
       <Link
-        to="/allPets"
+        to="/donation"
         className="flex justify-end items-end no-underline mx-10"
       >
         <button className="self-center md:px-8 px-4 md:py-3 py-2 font-semibold rounded bg-fuchsia-800 text-white">
@@ -38,4 +39,5 @@ const ListPets = () => {
     );
 };
 
-export default ListPets;
+export default ListDonation;
+// export default ListDonations;

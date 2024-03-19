@@ -1,0 +1,203 @@
+[
+    {
+      "id": 1,
+      "petName": "Buddy",
+      "petAge": 3,
+      "petLocation": "New York",
+      "donatedAmount": 50,
+      "description": "Buddy is a friendly and energetic Labrador Retriever mix, approximately three years old. He loves long walks in the park, playing fetch, and cuddling on the couch. He is fully vaccinated, neutered, and house-trained. Buddy gets along well with other dogs and children. He's looking for a loving family who will give him plenty of attention and exercise. His playful nature and loyalty make him a wonderful companion. If you're looking for a loyal and loving friend, Buddy is the perfect match for you. category: Dog.",
+      "category": "Dog",
+      "petImage": "https://i.ibb.co/PzH15Pd/photo-1535930749574-1399327ce78f-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+    },
+    {
+      "id": 2,
+      "petName": "Whiskers",
+      "petAge": 2,
+      "petLocation": "Los Angeles",
+      "donatedAmount": 30,
+      "description": "Whiskers is a two-year-old charming orange tabby cat with a playful and affectionate personality. He enjoys lounging in the sun, chasing toys, and curling up on laps for cuddles. Whiskers is litter-box trained, microchipped, and up-to-date on all vaccinations. He gets along well with other cats and cat-friendly dogs. Whiskers is looking for a forever home where he can be the center of attention and receive lots of love and affection. If you're looking for a sweet and entertaining feline companion, Whiskers is the perfect match. category: Cat.",
+      "category": "Cat",
+      "petImage": "https://i.ibb.co/Tkb9XVv/photo-1555955924-a8c17aa846b2-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces-edg.jpg"
+    },
+    {
+      "id": 3,
+      "petName": "Rocky",
+      "petAge": 4,
+      "petLocation": "Chicago",
+      "donatedAmount": 40,
+      "description": "Rocky is a four-year-old German Shepherd mix with a heart of gold. He is energetic, loyal, and always ready for an adventure. Rocky loves going for hikes, playing fetch, and spending time with his human companions. He is house-trained, crate-trained, and knows basic commands. Rocky gets along well with other dogs but prefers a home without cats. He would thrive in an active household where he can receive plenty of exercise and attention. If you're looking for a loyal and fun-loving canine companion, Rocky is the perfect match for you. category: Dog.",
+      "category": "Dog",
+      "petImage": "https://i.ibb.co/6PSNr3n/photo-1505628346881-b72b27e84530-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+    },
+    {
+      "id": 4,
+      "petName": "Sasha",
+      "petAge": 1,
+      "petLocation": "Houston",
+      "donatedAmount": 20,
+      "description": "Sasha is a one-year-old fluffy Persian cat with a sweet and gentle demeanor. She enjoys lounging in cozy spots, batting around toys, and receiving chin scratches. Sasha is litter-box trained, spayed, and up-to-date on vaccinations. She is a bit shy at first but warms up quickly to gentle and patient individuals. Sasha prefers a quiet and calm environment without other pets or small children. She would make a wonderful companion for someone looking for a low-key and affectionate feline friend. If you're looking for a loving and serene companion, Sasha is the perfect match. category: Cat.",
+      "category": "Cat",
+      "petImage": "https://i.ibb.co/Tvc0Gzv/photo-1555590684-90fdbf46b657-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces-edg.jpg"
+    },
+    {
+      "id": 5,
+      "petName": "Max",
+      "petAge": 2,
+      "petLocation": "Miami",
+      "donatedAmount": 35,
+      "description": "Max is a two-year-old Border Collie with a brilliant mind and a playful spirit. He thrives on mental and physical stimulation and enjoys learning new tricks and playing interactive games. Max is house-trained, neutered, and up-to-date on all vaccinations. He gets along well with other dogs and older children but may be too energetic for young kids. Max is looking for an active family who will provide him with plenty of exercise and mental enrichment. If you're looking for a clever and energetic companion, Max is the perfect match for you. category: Dog.",
+      "category": "Dog",
+      "petImage": "https://i.ibb.co/Pt1LPym/photo-1503256207526-0d5d80fa2f47-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+    },
+    {
+      "id": 6,
+      "petName": "Mittens",
+      "petAge": 3,
+      "petLocation": "Seattle",
+      "donatedAmount": 25,
+      "description": "Mittens is a three-year-old domestic shorthair cat with a sweet and affectionate nature. She enjoys napping in sunny spots, playing with feather toys, and receiving gentle chin scratches. Mittens is litter-box trained, spayed, and microchipped. She gets along well with other cats and cat-friendly dogs but may need a bit of time to adjust to new surroundings. Mittens is looking for a loving home where she can receive plenty of attention and cuddles. If you're looking for a loving and laid-back feline companion, Mittens is the perfect match for you. category: Cat.",
+      "category": "Cat",
+      "petImage": "https://i.ibb.co/qJKTyVx/photo-1482434368596-fbd06cae4f89-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+    },
+    {
+      "id": 7,
+      "petName": "Luna",
+      "petAge": 2,
+      "petLocation": "Boston",
+      "donatedAmount": 45,
+      "description": "Luna is a two-year-old Siamese mix cat with a curious and playful personality. She enjoys exploring her surroundings, chasing laser pointers, and cuddling up on laps for warmth. Luna is litter-box trained, spayed, and up-to-date on vaccinations. She gets along well with other cats and cat-friendly dogs but may be shy around strangers. Luna is looking for a patient and loving family who will give her time to adjust and plenty of affection. If you're looking for an adventurous and affectionate feline friend, Luna is the perfect match for you. category: Cat.",
+      "category": "Cat",
+      "petImage": "https://i.ibb.co/BscQ1DK/photo-1496284427489-f59461d8a8e6-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpgg"
+    },
+    {
+      "id": 8,
+      "petName": "Charlie",
+      "petAge": 5,
+      "petLocation": "San Francisco",
+      "donatedAmount": 55,
+      "description": "Charlie is a five-year-old Golden Retriever with a heart of gold and a gentle demeanor. He enjoys leisurely walks, playing fetch, and snuggling up with his favorite humans. Charlie is house-trained, neutered, and up-to-date on vaccinations. He gets along well with other dogs and children of all ages. Charlie is looking for a loving family who will cherish him as part of their pack. If you're looking for a loyal and affectionate canine companion, Charlie is the perfect match for you. category: Dog.",
+      "category": "Dog",
+      "petImage": "https://i.ibb.co/56jKcb1/photo-1510771463146-e89e6e86560e-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+    },   
+  {
+    "id": 9,
+    "petName": "Oreo",
+    "petAge": 4,
+    "petLocation": "Dallas",
+    "donatedAmount": 60,
+    "description": "Oreo is a four-year-old tuxedo cat with a playful and affectionate personality. He enjoys chasing toys, lounging in sunspots, and curling up on laps for cuddles. Oreo is litter-box trained, neutered, and up-to-date on vaccinations. He gets along well with other cats and cat-friendly dogs but may need a bit of time to warm up to new people. Oreo is looking for a loving family who will give him plenty of attention and affection. If you're looking for a charming and lovable feline friend, Oreo is the perfect match for you. category: Cat.",
+    "category": "Cat",
+    "petImage": "https://i.ibb.co/NLLsg8Y/premium-photo-1675848495392-6b9a3b962df0-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-cro.jpg"
+  },
+  {
+    "id": 10,
+    "petName": "Bella",
+    "petAge": 2,
+    "petLocation": "Philadelphia",
+    "donatedAmount": 30,
+    "description": "Bella is a two-year-old Beagle with a gentle and loving nature. She enjoys sniffing around the yard, going for leisurely walks, and cuddling up with her favorite humans. Bella is house-trained, spayed, and up-to-date on vaccinations. She gets along well with other dogs and children but may be wary of strangers at first. Bella is looking for a patient and loving family who will give her time to adjust and plenty of affection. If you're looking for a loyal and affectionate canine companion, Bella is the perfect match for you. category: Dog.",
+    "category": "Dog",
+    "petImage": "https://i.ibb.co/37H903y/photo-1554692918-08fa0fdc9db3-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces-edg.jpg"
+  },
+  {
+    "id": 11,
+    "petName": "Simba",
+    "petAge": 3,
+    "petLocation": "Atlanta",
+    "donatedAmount": 40,
+    "description": "Simba is a three-year-old Maine Coon cat with a majestic presence and a playful spirit. He enjoys exploring his surroundings, chasing after feather toys, and lounging in cozy spots. Simba is litter-box trained, neutered, and up-to-date on vaccinations. He gets along well with other cats and cat-friendly dogs but may be shy around new people. Simba is looking for a patient and understanding family who will give him time to adjust and plenty of love and attention. If you're looking for a regal and affectionate feline friend, Simba is the perfect match for you. category: Cat.",
+    "category": "Cat",
+    "petImage": "https://i.ibb.co/m0Bdn13/premium-photo-1675848493910-5474ee04c3e3-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-cro.jpg"
+  },
+  {
+    "id": 12,
+    "petName": "Max",
+    "petAge": 1,
+    "petLocation": "Denver",
+    "donatedAmount": 25,
+    "description": "Max is a one-year-old Jack Russell Terrier with boundless energy and a loving heart. He enjoys going for runs, playing fetch, and learning new tricks. Max is house-trained, neutered, and up-to-date on vaccinations. He gets along well with other dogs and older children but may be too active for young kids. Max is looking for an active family who will provide him with plenty of exercise and mental stimulation. If you're looking for a spirited and playful canine companion, Max is the perfect match for you. category: Dog.",
+    "category": "Dog",
+    "petImage": "https://i.ibb.co/NKNcR4j/photo-1554692936-82776f9406db-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces-edg.jpg"
+  },
+  {
+    "id": 13,
+    "petName": "Milo",
+    "petAge": 4,
+    "petLocation": "Detroit",
+    "donatedAmount": 35,
+    "description": "Milo is a four-year-old Bengal cat with a curious and playful personality. He enjoys exploring his surroundings, chasing after toys, and climbing to high places. Milo is litter-box trained, neutered, and up-to-date on vaccinations. He gets along well with other cats and cat-friendly dogs but may be wary of strangers at first. Milo is looking for an adventurous and loving family who will give him plenty of playtime and affection. If you're looking for an active and affectionate feline friend, Milo is the perfect match for you. category: Cat.",
+    "category": "Cat",
+    "petImage": "https://i.ibb.co/BBwdY82/photo-1571566882372-1598d88abd90-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+  },
+  {
+    "id": 14,
+    "petName": "Lucy",
+    "petAge": 2,
+    "petLocation": "Phoenix",
+    "donatedAmount": 50,
+    "description": "Lucy is a two-year-old Australian Shepherd mix with intelligence and charm. She enjoys solving puzzles, going for hikes, and learning new tricks. Lucy is house-trained, spayed, and up-to-date on vaccinations. She gets along well with other dogs and older children but may be too active for young kids. Lucy is looking for an active family who will provide her with plenty of mental and physical stimulation. If you're looking for a clever and energetic canine companion, Lucy is the perfect match for you. category: Dog.",
+    "category": "Dog",
+    "petImage": "https://i.ibb.co/hXDyJ2Z/photo-1525253086316-d0c936c814f8-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+  },
+  {
+    "id": 15,
+    "petName": "Chloe",
+    "petAge": 3,
+    "petLocation": "Las Vegas",
+    "donatedAmount": 40,
+    "description": "Chloe is a three-year-old Ragdoll cat with a sweet and gentle demeanor. She enjoys lounging in sunny spots, receiving chin scratches, and playing with feather toys. Chloe is litter-box trained, spayed, and up-to-date on vaccinations. She gets along well with other cats and cat-friendly dogs but may be shy around new people. Chloe is looking for a quiet and loving home where she can feel safe and secure. If you're looking for a loving and serene feline companion, Chloe is the perfect match for you. category: Cat.",
+    "category": "Cat",
+    "petImage": "https://i.ibb.co/pXXSRKj/photo-1604675223954-b1aabd668078-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+  },
+  {
+    "id": 16,
+    "petName": "Cooper",
+    "petAge": 2,
+    "petLocation": "Portland",
+    "donatedAmount": 45,
+    "description": "Cooper is a two-year-old Labrador Retriever with a playful spirit and a heart of gold. He enjoys playing fetch, going for long walks, and cuddling up with his favorite humans. Cooper is house-trained, neutered, and up-to-date on vaccinations. He gets along well with other dogs and children but may be too energetic for young kids. Cooper is looking for an active family who will provide him with plenty of exercise and love. If you're looking for a loyal and energetic canine companion, Cooper is the perfect match for you. category: Dog.",
+    "category": "Dog",
+    "petImage": "https://i.ibb.co/m9HLWhj/photo-1548199973-03cce0bbc87b-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces-edg.jpg"
+  },
+  {
+    "id": 17,
+    "petName": "Sophie",
+    "petAge": 4,
+    "petLocation": "Austin",
+    "donatedAmount": 55,
+    "description": "Sophie is a four-year-old Siamese cat with a friendly and affectionate personality. She loves to be the center of attention and enjoys cuddling up with her favorite humans. Sophie is litter-box trained, spayed, and up-to-date on vaccinations. She gets along well with other cats and cat-friendly dogs but may need a bit of time to warm up to new people. Sophie is looking for a loving family who will give her plenty of attention and affection. If you're looking for a sweet and sociable feline companion, Sophie is the perfect match for you. category: Cat.",
+    "category": "Cat",
+    "petImage": "https://i.ibb.co/2SZGt02/photo-1511263567451-ffc629313033-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+  },
+  {
+    "id": 18,
+    "petName": "Bailey",
+    "petAge": 1,
+    "petLocation": "Nashville",
+    "donatedAmount": 30,
+    "description": "Bailey is a one-year-old Shih Tzu with a playful and energetic personality. He loves to play with toys, go for walks, and snuggle up with his favorite humans. Bailey is house-trained, neutered, and up-to-date on vaccinations. He gets along well with other dogs and children but may be a bit shy around new people. Bailey is looking for an active family who will provide him with plenty of exercise and love. If you're looking for a fun-loving and affectionate canine companion, Bailey is the perfect match for you. category: Dog.",
+    "category": "Dog",
+    "petImage": "https://i.ibb.co/z7Jkw09/photo-1530281700549-e82e7bf110d6-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+  },
+  {
+    "id": 19,
+    "petName": "Lily",
+    "petAge": 3,
+    "petLocation": "Orlando",
+    "donatedAmount": 40,
+    "description": "Lily is a three-year-old Ragdoll cat with a gentle and affectionate nature. She enjoys lounging in cozy spots, receiving chin scratches, and playing with feather toys. Lily is litter-box trained, spayed, and up-to-date on vaccinations. She gets along well with other cats and cat-friendly dogs but may be shy around new people. Lily is looking for a loving home where she can feel safe and secure. If you're looking for a sweet and serene feline companion, Lily is the perfect match for you. category: Cat.",
+    "category": "Cat",
+    "petImage": "https://i.ibb.co/3kjxv4m/photo-1566847438217-76e82d383f84-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
+  },
+  {
+    "id": 20,
+    "petName": "Oliver",
+    "petAge": 2,
+    "petLocation": "Houston",
+    "donatedAmount": 35,
+    "description": "Oliver is a two-year-old Golden Retriever with a gentle and friendly demeanor. He loves to play fetch, go for walks, and cuddle up with his favorite humans. Oliver is house-trained, neutered, and up-to-date on vaccinations. He gets along well with other dogs and children but may be a bit shy around new people. Oliver is looking for a loving family who will provide him with plenty of love and attention. If you're looking for a loyal and affectionate canine companion, Oliver is the perfect match for you. category: Dog.",
+    "category": "Dog",
+    "petImage": "https://i.ibb.co/tz6KQ2s/photo-1559190394-df5a28aab5c5-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces-edg.jpg"
+  }
+]
+

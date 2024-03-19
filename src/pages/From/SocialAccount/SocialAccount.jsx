@@ -1,29 +1,33 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import useAxiosPublic from "../../../hooks/useAxiosPublic";
 
 const SocialAccount = () => {
 
     const {googleSignIn } = useContext(AuthContext);
 	const location = useLocation();
     const navigate = useNavigate();
+    const axiosPublic = useAxiosPublic();
 
 
     const handleGoogle = () => {  
         googleSignIn()
         .then(result => {
             console.log(result.user);
-            // const userInfo = {
-            //     email: result.user?.email,
-            //     name: result.user?.displayName,
-            //     image: result.user?.photoURL
-            // }
-            // axiosPublic.post('/users', userInfo)
-            // .then(res => {
-            //     console.log(res.data);
-            //     navigate('/')
-            // })
-			navigate('/')
+            const userInfo = {
+                email: result.user?.email,
+                name: result.user?.displayName,
+                image: result.user?.photoURL
+            }
+            axiosPublic.post('/users', userInfo)
+            .then(res => {
+                console.log(res.data);
+                navigate('/')
+            })
+			// navigate('/')
+            // navigate(location?.state? location.state : '/')
         })
     }
 

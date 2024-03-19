@@ -1,9 +1,11 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { Card } from "flowbite-react";
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-const AllPetsCard = ({ pet }) => {
+const DonationCard = ({ donation }) => {
   const {
+    _id,
     id,
     category,
     description,
@@ -12,17 +14,20 @@ const AllPetsCard = ({ pet }) => {
     petImage,
     petLocation,
     petName,
-  } = pet;
+  } = donation;
+
+ 
   return (
     <div>
-      <div
-        className="m-2 p-0 mb-20 rounded-lg border-2 border-fuchsia-700 shadow-lg shadow-slate-500 bg-fuchsia-50"
-      >
-        <img className='w-full lg:h-[190px] h-full rounded-t-lg' src={petImage} alt="petimage" />
-
-        <div className="p-4">
+      <div className="m-4 p-0 mb-20 rounded-lg border-2 border-fuchsia-700 shadow-lg shadow-slate-500 bg-fuchsia-50">
+        <img
+          className="w-full lg:h-[190px] h-full rounded-t-lg"
+          src={petImage}
+          alt="petimage"
+        />
+        <div className="p-6 ">
           <a href="#">
-            <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
               {petName}
             </h5>
           </a>
@@ -72,22 +77,21 @@ const AllPetsCard = ({ pet }) => {
             </span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="text-2xl font-semibold text-gray-900 dark:text-white">
-              Age: {petAge}
+            <span className="text-3xl text-fuchsia-800 font-bold  dark:text-white">
+              ${donatedAmount}
             </span>
 
-            <a
-              href="#"
+           <Link to={`/donation/${_id}`}> <button          
               className="rounded-lg bg-fuchsia-900 text-white px-3 py-2"
             >
-              Adopt
-            </a>
-
+             Donation details
+            </button></Link>
           </div>
         </div>
       </div>
+
     </div>
   );
 };
 
-export default AllPetsCard;
+export default DonationCard;
