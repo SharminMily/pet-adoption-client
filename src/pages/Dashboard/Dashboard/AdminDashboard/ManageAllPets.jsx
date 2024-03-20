@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Checkbox, Table } from 'flowbite-react';
 import usePets from '../../../../hooks/usePets';
 const ManageAllPets = () => {

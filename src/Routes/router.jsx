@@ -16,6 +16,7 @@ import Donation from "../pages/Donation/Donation";
 import DonationDetails from "../pages/Donation/DonationDetails";
 import AllPetsDetails from "../pages/AllPets/AllPetsDetails";
 import AddCard from "../pages/Dashboard/Dashboard/UsersDashboard/AddCard";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -68,7 +69,7 @@ const router = createBrowserRouter([
 
   {
     path: "dashboard",
-    element: <Dashboard></Dashboard>,
+    element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children: [
       {
         path: "manageAllPets",

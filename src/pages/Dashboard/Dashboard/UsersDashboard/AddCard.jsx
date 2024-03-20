@@ -1,9 +1,44 @@
-import { Checkbox, Table } from "flowbite-react";
+import { Table } from "flowbite-react";
 import useCart from "../../../../hooks/useCart";
+import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const AddCard = () => {
-    const [cart] = useCart();
+    const [cart, refetch] = useCart();
 // console.log(cart)
+
+const axiosSecure = useAxiosSecure();
+
+
+const handleDelete = id => {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+    })
+    .then((result) => {
+        if (result.isConfirmed) {
+
+            axiosSecure.delete(`/carts/${id}`)
+                .then(res => {
+                    if (res.data.deletedCount > 0) {
+                        refetch();
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "Your file has been deleted.",
+                            icon: "success"
+                        });
+                    }
+                })
+        }
+    });
+}
+
+
     return (
         <div>
         <div className="overflow-x-auto">
@@ -44,7 +79,7 @@ const AddCard = () => {
                                 petName}</Table.Cell>
                             <Table.Cell>update</Table.Cell>
                             <Table.Cell>
-                                <a href="#" className="font-medium text-cyan-600 hover:underline dark:text-cyan-500">
+                                <a onClick={() => handleDelete(item._id)}  href="#" className="font-medium text-red-500 hover:underline ">
                                     delete
                                 </a>
                             </Table.Cell>
