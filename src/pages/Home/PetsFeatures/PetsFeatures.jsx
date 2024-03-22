@@ -4,18 +4,18 @@ const PetsFeatures = () => {
   return (
     <div className="lg:mx-0 lg:my-10 m-8">
       <h1 className="text-center text-4xl font-semibold">
-        Pets <span className="text-fuchsia-900 font-bold ">Features</span> Here
+        Pets <span className=" font-bold ">Features</span> Here
       </h1>
 
-      <div className="grid lg:grid-cols-3 mt-8 border-2 border-fuchsia-950 text-end">
+      <div className="grid lg:grid-cols-3 mt-8 border-2 shadow-lg shadow-gray-800 text-end">
         {/* 1 */}
-        <div className="bg-fuchsia-900 text-white px-4 py-8">
+        <div className="bg-[#dee0e4]  px-4 py-8">
           <div className="">
             <h1 className="flex lg:justify-end justify-center items-center gap-1 font-bold text-xl pb-2 lg:text-end">
               {" "}
               Adoption Application Process <HiViewGrid className="mt-2" />
             </h1>
-            <p className="text-gray-200 pr-6  lg:text-end text-center">
+            <p className="text-gray-600 pr-6  lg:text-end text-center">
             Provide a way for users to submit adoption applications online, including questions about their lifestyle, experience with pets, and reasons for adoption.
             </p>
           </div>
@@ -26,7 +26,7 @@ const PetsFeatures = () => {
               {" "}
               Search and Filter Tools <HiViewGrid className="mt-2" />
             </h1>
-            <p className="text-gray-200 pr-6  lg:text-end text-center">
+            <p className="text-gray-600 pr-6  lg:text-end text-center">
               Provide advanced search and filtering options to help users narrow
               down their options based on criteria such as species, breed, age,
               size, location, and more.{" "}
@@ -38,7 +38,7 @@ const PetsFeatures = () => {
               {" "}
               Donations and Fundraising <HiViewGrid className="mt-2" />
             </h1>
-            <p className="text-gray-200 pr-6  lg:text-end text-center">
+            <p className="text-gray-600 pr-6  lg:text-end text-center">
               Provide options for users to make donations, sponsor pets, or
               contribute to fundraising campaigns to support the operations and
               care of the organization.{" "}
@@ -55,12 +55,12 @@ const PetsFeatures = () => {
         </div>
 
         {/* 3 */}
-        <div className="bg-fuchsia-900 text-white px-4 py-8">
+        <div className="bg-[#dee0e4] px-4 py-8">
           <div className="">
             <h1 className="flex lg:justify-start  justify-center items-center gap-1 font-bold text-xl pb-2 lg:text-end">
               <HiViewGrid className="" /> Adoption Application Management
             </h1>
-            <p className="text-gray-200 pl-6  lg:text-start text-center">
+            <p className="text-gray-600 pl-6  lg:text-start text-center">
             Enable users to submit adoption applications online, track their status, and communicate with shelters/rescue organizations throughout the process.
             </p>
           </div>
@@ -71,7 +71,7 @@ const PetsFeatures = () => {
             <HiViewGrid className="mt-" /> 
             Volunteer Management
             </h1>
-            <p className="text-gray-200 pl-6  lg:text-start text-center">
+            <p className="text-gray-600 pl-6  lg:text-start text-center">
             Offer features for managing volunteer applications, schedules, tasks, and communication to help recruit and coordinate volunteers for various roles within the organization.
             </p>
           </div>
@@ -81,7 +81,7 @@ const PetsFeatures = () => {
             <HiViewGrid className="mt-" /> 
             Accessibility Features 
             </h1>
-            <p className="text-gray-200 pl-6  lg:text-start text-center">
+            <p className="text-gray-600 pl-6  lg:text-start text-center">
             Ensure the platform is accessible to users with disabilities by incorporating features such as screen reader compatibility, keyboard navigation, and alternative text for images.
             </p>
           </div>

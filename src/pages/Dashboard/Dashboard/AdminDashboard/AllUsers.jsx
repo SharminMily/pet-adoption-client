@@ -3,6 +3,7 @@ import useAxiosSecure from "../../../../hooks/useAxiosSecure";
 
 import { Table } from "flowbite-react";
 import Swal from "sweetalert2";
+import { MdDeleteForever } from "react-icons/md";
 
 const AllUsers = () => {
   const axiosSecure = useAxiosSecure();
@@ -10,7 +11,7 @@ const AllUsers = () => {
   const { data: users = [], refetch } = useQuery({
     queryKey: ["users"],
     queryFn: async () => {
-      const res = await axiosSecure.get('/users') 
+      const res = await axiosSecure.get("/users");
       return res.data;
     },
   });
@@ -59,27 +60,47 @@ const AllUsers = () => {
   return (
     <div>
       <div className="flex justify-evenly my-4">
-        <h2 className="text-3xl ">All Users </h2>
-        <h2 className="text-3xl ">Total Users : {users.length}</h2>
+        <h1 className="text-3xl text-center font-semibold ">All <span className="text-[#8a8c92]">Users</span>  </h1>
+        {/* <h2 className="text-3xl ">Total Users : {users.length}</h2> */}
       </div>
 
       <div className="overflow-x-auto">
         <Table>
           <Table.Head>
-            <Table.HeadCell>number</Table.HeadCell>
-            <Table.HeadCell>Name</Table.HeadCell>
-            <Table.HeadCell>email</Table.HeadCell>
-            <Table.HeadCell>role</Table.HeadCell>
-            <Table.HeadCell>delete</Table.HeadCell>
+            <Table.HeadCell className="bg-[#DCE0EB]">
+              {" "}
+              num
+            </Table.HeadCell>
+
+            <Table.HeadCell className="bg-[#DCE0EB]">
+              {" "}
+              Name
+            </Table.HeadCell>
+
+            <Table.HeadCell className="bg-[#DCE0EB]">
+              {" "}
+              Email
+            </Table.HeadCell>
+            <Table.HeadCell className="bg-[#DCE0EB]">
+              {" "}
+              Role
+            </Table.HeadCell>
+
+            <Table.HeadCell className="bg-[#DCE0EB]">
+              {" "}
+              delete
+            </Table.HeadCell>
+
           </Table.Head>
 
           <Table.Body className="divide-y">
             {users.map((user, index) => (
               <Table.Row
                 key={user._id}
-                className="bg-white dark:border-gray-700 dark:bg-gray-800"
+                className=" dark:border-gray-700 dark:bg-gray-800"
               >
-                <Table.Cell>{index + 1}</Table.Cell>
+                <Table.Cell ><div className="font-bold text-[#818286]">{index + 1}</div>
+                </Table.Cell>
                 <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                   {user.name}
                 </Table.Cell>
@@ -97,9 +118,9 @@ const AllUsers = () => {
                   <a
                     onClick={() => handleDeleteUser(user)}
                     href="#"
-                    className="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
+                    className="text-2xl text-red-600 hover:underline "
                   >
-                    Delete
+                    <MdDeleteForever />
                   </a>
                 </Table.Cell>
               </Table.Row>

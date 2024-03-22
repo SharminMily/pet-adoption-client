@@ -15,8 +15,8 @@ const Home = () => {
            <Pets></Pets>
            <ListPets></ListPets>
            <ListDonations></ListDonations>
-           <PetPresentations></PetPresentations>
            <SaleOff></SaleOff>
+           <PetPresentations></PetPresentations>
            <PetsHeathCheck></PetsHeathCheck>
            <PetsFeatures></PetsFeatures>
         </>

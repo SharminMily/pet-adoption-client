@@ -19,8 +19,8 @@ const Header = () => {
           to="/"
           className={({ isActive }) =>
             isActive
-              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
-              : "text-white font-semibold text-base hover:text-gray-200"
+              ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+              : " font-semibold text-base hover:text-gray-600"
           }
         >
           Home
@@ -32,8 +32,8 @@ const Header = () => {
           to="/allPets"
           className={({ isActive }) =>
             isActive
-              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
-              : "text-white font-semibold text-base hover:text-gray-200"
+              ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+              : " font-semibold text-base hover:text-gray-600"
           }
         >
           All Pets
@@ -45,8 +45,8 @@ const Header = () => {
           to="/donation"
           className={({ isActive }) =>
             isActive
-              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
-              : "text-white font-semibold text-base hover:text-gray-200"
+              ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+              : " font-semibold text-base hover:text-gray-600"
           }
         >
          Donations
@@ -58,8 +58,8 @@ const Header = () => {
           to="/dashboard"
           className={({ isActive }) =>
             isActive
-              ? "text-white font-semibold text-base hover:text-gray-200 border-b-2"
-              : "text-white font-semibold text-base hover:text-gray-200"
+              ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+              : " font-semibold text-base hover:text-gray-600"
           }
         >
           Dashboard
@@ -69,7 +69,10 @@ const Header = () => {
       <li>
         <NavLink
           to="/about"
-          className="text-white font-semibold text-lg hover:text-gray-200"
+          className={({ isActive }) =>
+          isActive
+            ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+            : " font-semibold text-base hover:text-gray-600"}
         >
           about
         </NavLink>
@@ -79,14 +82,14 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar className="bg-fuchsia-900" fluid rounded>
+      <Navbar className="bg-[#DCE0EB]" fluid rounded>
         <Navbar.Brand href="https://flowbite-react.com">
           <img
             src="https://i.ibb.co/p4z17sD/photo-1561948955-570b270e7c36-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-0.jpg"
             alt="photo-1561948955-570b270e7c36-w-500-auto-format-fit-crop-q-60-ixlib-rb-4-0"
             className="mr-3 w-10 h-10 rounded-full sm:h-9"
           />
-          <span className="self-center whitespace-nowrap text-lg text-white font-bold">
+          <span className="self-center whitespace-nowrap text-lg font-bold">
             PET ADOPTION
           </span>
         </Navbar.Brand>
@@ -144,7 +147,7 @@ const Header = () => {
           ) : (
             <>
               <Navbar
-                className="text-gray-100 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center"
+                className="text-gray-700 font-semibold bg- ml-6 mb- p-3 text-lg flex justify-center items-center"
                 href=""
               >
                 <Link to="/signIn">SignIn</Link>

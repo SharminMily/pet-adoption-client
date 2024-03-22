@@ -6,14 +6,14 @@ import { HiOutlineArrowRight } from 'react-icons/hi';
 const Pets = () => {
   return (
     <div className="md:mt-20 mt-4 md:m-4 m-2">
-      <h1 className="text-center text-3xl  font-semibold mb-2">Lets Some <span className="text-fuchsia-700 font-bold">Pets </span>Info </h1>
+      <h1 className="text-center text-3xl  font-semibold mb-2">Lets Some <span className=" font-bold">Pets </span>Info </h1>
       
       <p className="text-center pb-8">Pets bring joy and companionship to our lives. Dogs, known for loyalty and playfulness, require regular exercise and training. <br /> Cats, independent and curious, thrive with proper nutrition and enrichment. Small pets like rabbits and guinea pigs <br />  need spacious enclosures and social interaction. Responsible care ensures a fulfilling life for all pets.</p>
 
       <div className="grid lg:grid-cols-4 grid-cols-2  justify-center md:gap-4 gap-1">
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-900">
+          <Card className="max-w-sm bg-[#c5c9d3]">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -22,13 +22,13 @@ const Pets = () => {
                 alt=""
               />
 
-              <h5 className="mb-1 pt-2 text-xl font-medium  dark:text-white text-white">
+              <h5 className="mb-1 pt-2 text-xl font-medium ">
                 Luxa Belle
               </h5>
-              <span className="text-sm text-gray-200 ">Jack Smith</span>
+              <span className="text-sm text-gray-700 ">Jack Smith</span>
               <div className="mt-4 flex space-x-3 lg:mt-6">
                 
-                <button className="text-black px-5 py-1 rounded-full bg-white mx-8  flex gap-1 text-xl font-bold hover:bg-slate-200" > Details
+                <button className="text-gray-100 px-5 py-1 rounded-full bg-slate-700  mx-8  flex gap-1 text-lg font-bold hover:bg-slate-600" > Details
         <HiOutlineArrowRight className="h-6 w-6 text-" />
       </button>
 
@@ -39,7 +39,7 @@ const Pets = () => {
 
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-900">
+          <Card className="max-w-sm bg-[#c5c9d3]">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -48,12 +48,12 @@ const Pets = () => {
                 alt=""
               />
 
-              <h5 className="mb-1 pt-2 text-xl font-medium  dark:text-white text-white">
+              <h5 className="mb-1 pt-2 text-xl font-medium  text-gray-700">
                 Max Duke
               </h5>
-              <span className="text-sm text-gray-200 ">Sarah Jones</span>
+              <span className="text-sm text-gray-700">Sarah Jones</span>
               <div className="mt-4 flex space-x-3 lg:mt-6">
-              <button className="text-black px-5 py-1 rounded-full bg-white mx-8  flex gap-1 text-xl font-bold hover:bg-slate-200" > Details
+              <button className="text-gray-100 px-5 py-1 rounded-full bg-slate-700  mx-8  flex gap-1 text-lg font-bold hover:bg-slate-600" > Details
         <HiOutlineArrowRight className="h-6 w-6 text-" />
       </button>
               </div>
@@ -63,7 +63,7 @@ const Pets = () => {
 
         {/* 3 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-900">
+          <Card className="max-w-sm bg-[#c5c9d3]">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -72,12 +72,12 @@ const Pets = () => {
                 alt=""
               />
 
-              <h5 className="mb-1 pt-2 text-xl font-medium  dark:text-white text-white">
+              <h5 className="mb-1 pt-2 text-xl font-medium  text-gray-700">
                 Bella Rose
               </h5>
-              <span className="text-sm text-gray-200 ">Mark Davis</span>
+              <span className="text-sm text-gray-700">Mark Davis</span>
               <div className="mt-4 flex space-x-3 lg:mt-6">
-              <button className="text-black px-5 py-1 rounded-full bg-white mx-8  flex gap-1 text-xl font-bold hover:bg-slate-200" > Details
+              <button className="text-gray-100 px-5 py-1 rounded-full bg-slate-700  mx-8  flex gap-1 text-lg font-bold hover:bg-slate-600" > Details
         <HiOutlineArrowRight className="h-6 w-6 text-" />
       </button>
               </div>
@@ -87,7 +87,7 @@ const Pets = () => {
 
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-fuchsia-900">
+          <Card className="max-w-sm bg-[#c5c9d3]">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -96,12 +96,12 @@ const Pets = () => {
                 alt=""
               />
 
-              <h5 className="mb-1 pt-2 text-xl font-medium  dark:text-white text-white">
+              <h5 className="mb-1 pt-2 text-xl font-medium  text-gray-700">
                 Rocky Blue
               </h5>
-              <span className="text-sm text-gray-200 ">Emma Brown</span>
+              <span className="text-sm text-gray-700">Emma Brown</span>
               <div className="mt-4 flex space-x-3 lg:mt-6">
-              <button className="text-black px-5 py-1 rounded-full bg-white mx-8  flex gap-1 text-xl font-bold hover:bg-slate-200" > Details
+              <button className="text-gray-100 px-5 py-1 rounded-full bg-slate-700  mx-8  flex gap-1 text-lg font-bold hover:bg-slate-600" > Details
         <HiOutlineArrowRight className="h-6 w-6 text-" />
       </button>
               </div>

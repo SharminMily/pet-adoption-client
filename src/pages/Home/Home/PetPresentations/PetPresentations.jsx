@@ -1,15 +1,14 @@
-import { Card } from "flowbite-react";
 const PetPresentations = () => {
   return (
     <div className="lg:m-20 md:m-10">
 
-        <h1 className="text-center text-fuchsia-800 font-bold text-2xl  uppercase text-fuchsia-8 00 pb-3 px-4">Choosing the Right Companion for You</h1>
+        <h1 className="text-center text- font-bold text-2xl  uppercase text-fuchsia-8 00 pb-3 px-4">Choosing the Right Companion for You</h1>
         <p className="text-gray-500 flex justify-center items-center text-center mb-10 px-6 md:text-base text-sm">Pet Pals - is a concise presentation offering guidance on selecting the perfect pet companion. <br /> Learn about the needs and characteristics of various pets, from dogs and cats to small mammals and birds. <br /> Discover which pet best suits your lifestyle and embark on a rewarding journey of companionship.</p>
       <div>
-        <div className="mb-8">
+        <div className="mb-16">
      
             <div className="mb-8">
-          <Card>
+          <div className="shadow-xl shadow-slate-700">
             <div className="lg:flex ">
             <div className="lg:1/3">
                 <img
@@ -18,11 +17,11 @@ const PetPresentations = () => {
                   alt=""
                 />
               </div>
-              <div className="lg:w-2/3 p-8 bg-fuchsia-900 text-white">
+              <div className="lg:w-2/3 p-8 bg-[#dee0e4] ">
                 <h1 className=" font-bold text-bold text-2xl pb-4">
                   A Guide to Responsible Pet Ownership
                 </h1>
-                <p className="text-gray-300 md:text-base text-sm">
+                <p className="text-gray-600 md:text-base text-sm">
                   Paws, Claws, and Feathers is a comprehensive presentation
                   designed to educate prospective pet owners on responsible pet
                   ownership. From dogs and cats to birds and reptiles, explore
@@ -33,7 +32,7 @@ const PetPresentations = () => {
                 </p>
                 <br />
 
-                <p className="font-normal text-gray-300 dark:text-gray-400 md:text-base text-sm">
+                <p className="font-normal text-gray-600 md:text-base text-sm">
                   Gain insights into selecting the right pet for your lifestyle
                   and family dynamics, and understand the commitment involved in
                   providing a loving and nurturing home. Join us on this journey
@@ -43,19 +42,19 @@ const PetPresentations = () => {
               
 
             </div>
-          </Card>
+          </div>
         </div>
       </div>
         </div>
 
         <div className="mb-8">
-          <Card>
-            <div className="lg:flex bg-fuchsia-900 text-white">
+          <div className="shadow-xl shadow-slate-700">
+            <div className="lg:flex bg-[#dee0e4] text-">
               <div className="lg:w-2/3 p-8">
-                <h1 className="text-white font-bold text-bold text-2xl pb-4">
+                <h1 className="text- font-bold text-bold text-2xl pb-4">
                   A Guide to Responsible Pet Ownership
                 </h1>
-                <p className="text-gray-300 md:text-base text-sm">
+                <p className="text-gray-600 md:text-base text-sm">
                   Paws, Claws, and Feathers is a comprehensive presentation
                   designed to educate prospective pet owners on responsible pet
                   ownership. From dogs and cats to birds and reptiles, explore
@@ -66,7 +65,7 @@ const PetPresentations = () => {
                 </p>
                 <br />
 
-                <p className="font-normal text-gray-300 dark:text-gray-400 md:text-base text-sm">
+                <p className="font-normal text-gray-600  md:text-base text-sm">
                   Gain insights into selecting the right pet for your lifestyle
                   and family dynamics, and understand the commitment involved in
                   providing a loving and nurturing home. Join us on this journey
@@ -81,7 +80,7 @@ const PetPresentations = () => {
                 />
               </div>
             </div>
-          </Card>
+          </div>
         </div>
       </div>
 
