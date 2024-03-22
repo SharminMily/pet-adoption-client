@@ -18,6 +18,7 @@ import AllPetsDetails from "../pages/AllPets/AllPetsDetails";
 import AddCard from "../pages/Dashboard/Dashboard/UsersDashboard/AddCard";
 import PrivateRoute from "./PrivateRoute";
 import AddPets from "../pages/Dashboard/Dashboard/AdminDashboard/AddPets";
+import AdminRoute from "./AdminRoute";
 
 
 const router = createBrowserRouter([
@@ -74,20 +75,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: "manageAllPets",
-        element: <ManageAllPets></ManageAllPets>
+        element: <AdminRoute><ManageAllPets></ManageAllPets></AdminRoute>
       },
       {
         path: "allDonations",
-        element: <AllDonations></AllDonations>
+        element: <AdminRoute><AllDonations></AllDonations></AdminRoute>
       },
       {
         path: "addPets",
-        element: <AddPets></AddPets>
+        element: <AdminRoute> <AddPets></AddPets> </AdminRoute>
       },
 
       {
         path: "allUsers",
-        element: <AllUsers></AllUsers>
+        element: <AdminRoute> <AllUsers></AllUsers> </AdminRoute>
       },
       {
         path: "addCarts",
