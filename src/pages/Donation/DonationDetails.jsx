@@ -27,7 +27,7 @@ const DonationDetails = () => {
   const onSubmit = async (data) => {
     // console.log(data)
 
-    fetch('http://localhost:5000/myDonations', {
+    fetch('https://pet-adoptions-server.vercel.app/myDonations', {
       method: 'POST',
       headers: {
         'content-type' : 'application/json'

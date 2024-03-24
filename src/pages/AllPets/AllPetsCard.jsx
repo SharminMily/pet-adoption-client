@@ -20,7 +20,7 @@ const AllPetsCard = ({ pet }) => {
       <div
         className="m-2 p-0 mb-20 rounded-lg border-2 border-state-700 shadow-lg shadow-slate-500 bg-"
       >
-        <img className='w-full lg:h-[190px] h-full rounded-t-lg' src={petImage} alt="petimage" />
+        <img className='w-full lg:h-[190px] md:h-[170px] h-full rounded-t-lg' src={petImage} alt="petimage" />
 
         <div className="p-4">
           <a href="#">
@@ -28,7 +28,7 @@ const AllPetsCard = ({ pet }) => {
               {petName}
             </h5>
           </a>
-          <div className="mb-5 mt-2.5 flex items-center">
+          <div className="mb-2 mt-2.5 flex items-center">
             <svg
               className="h-5 w-5 text-yellow-300"
               fill="currentColor"
@@ -73,20 +73,19 @@ const AllPetsCard = ({ pet }) => {
               5.0
             </span>
           </div>
-          <div className="flex items-center justify-between">
+         
             <span className="text-2xl font-semibold text-gray-900 dark:text-white">
               Age: {petAge}
-            </span>
+            </span>       
 
-            <Link to={`/allPets/${_id}`}>
+     
+          <Link to={`/allPets/${_id}`}>
             <button
               href="#"
-              className="rounded-lg text-gray-50 bg-slate-700 px-3 py-2"
+              className="rounded-lg text-gray-50 bg-slate-700 w-full mt-3 px-3 py-2"
             >
               Adopt details
             </button></Link>
-
-          </div>
         </div>
       </div>
     </div>

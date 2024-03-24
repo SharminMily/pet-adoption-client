@@ -5,7 +5,7 @@ const AllPets = () => {
   const [pets, setPets] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allPets")
+    fetch("https://pet-adoptions-server.vercel.app/allPets")
       .then((res) => res.json())
       .then((data) => setPets(data));
   }, []);

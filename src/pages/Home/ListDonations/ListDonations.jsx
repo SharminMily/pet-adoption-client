@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import AllPetsCard from "../../AllPets/AllPetsCard";
+
 import DonationCard from "../../Donation/DonationCard";
 
 const ListDonation = () => {
 
     const [donations, setDonations] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:5000/donations")
+      fetch("https://pet-adoptions-server.vercel.app/donations")
         .then((res) => res.json())
         .then((data) => setDonations(data));
     }, []);

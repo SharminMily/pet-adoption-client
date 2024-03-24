@@ -61,7 +61,7 @@ const AdminHome = () => {
   const [stats, setStats] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin-stats")
+    fetch("https://pet-adoptions-server.vercel.app/admin-stats")
       .then((res) => res.json())
       .then((data) => setStats(data));
   }, []);

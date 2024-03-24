@@ -23,8 +23,8 @@ const Dashboard = () => {
   const [isAdmin] = useAdmin();
 
   return (
-    <div className="flex bg-gray-100">
-      <div className="w-64 min-h-screen bg-[#DCE0EB] px-2">
+    <div className="md:flex bg-gray-100">
+      <div className="md:w-64 md:min-h-screen bg-[#DCE0EB] px-2">
         {isAdmin ? (
           <>
             <ul className="menu gap-2 py-6 px-2 text-base">
