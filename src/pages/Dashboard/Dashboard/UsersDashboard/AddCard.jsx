@@ -40,21 +40,21 @@ const AddCard = () => {
         <Table hoverable>
           <Table.Head>
 
-            <Table.HeadCell className="bg-fuchsia-700 text-white">
+            <Table.HeadCell className="bg-slate-300 ">
               {" "}
               num
             </Table.HeadCell>
 
-            <Table.HeadCell className="bg-fuchsia-700 text-white">
+            <Table.HeadCell className="bg-slate-300">
               {" "}
               Image
             </Table.HeadCell>
 
-            <Table.HeadCell className="bg-fuchsia-700 text-white">
+            <Table.HeadCell className="bg-slate-300">
               {" "}
               Name
             </Table.HeadCell>
-            <Table.HeadCell className="bg-fuchsia-700 text-white">
+            <Table.HeadCell className="bg-slate-300">
               {" "}
               Category
             </Table.HeadCell>
@@ -63,7 +63,7 @@ const AddCard = () => {
               {" "}
               Edit
             </Table.HeadCell> */}
-            <Table.HeadCell className="bg-fuchsia-700 text-white">
+            <Table.HeadCell className="bg-slate-300">
               {" "}
               delete
             </Table.HeadCell>

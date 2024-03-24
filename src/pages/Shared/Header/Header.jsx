@@ -135,7 +135,7 @@ const Header = () => {
             </>
           )}
 
-          <Navbar.Toggle className="text-white ml-6 hover:bg-fuchsia-700 hover:text-sm" />
+          <Navbar.Toggle className=" ml-6 hover:b hover:text-sm" />
         </div>
         <Navbar.Collapse className="">{navOptions}</Navbar.Collapse>
       </Navbar>

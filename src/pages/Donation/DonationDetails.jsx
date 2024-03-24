@@ -23,17 +23,32 @@ const DonationDetails = () => {
 
 
   const { register, handleSubmit, reset} = useForm();
+  
   const onSubmit = async (data) => {
-    console.log(data)
+    // console.log(data)
+
+    fetch('http://localhost:5000/myDonations', {
+      method: 'POST',
+      headers: {
+        'content-type' : 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => {
+
+      console.log(data)
+    })
+
     Swal.fire({
       position: "top-end",
       icon: "success",
-      title: "Your work has been saved",
+      title: "Your Donation saved",
       showConfirmButton: false,
       timer: 1500
     });
   }
-  
+ 
 
   return (
     <div className="my-10 justify-center">

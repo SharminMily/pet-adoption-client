@@ -1,26 +1,58 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-
+import React from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import { useQuery } from "@tanstack/react-query";
 
-const AllPetsCard = ({ pet }) => {
-  const {
-    _id,
-    id,
-    category,
-    description,
-    donatedAmount,
-    petAge,
-    petImage,
-    petLocation,
-    petName,
-  } = pet;
+const MyDonationsCard = ({ myDonation }) => {
+  const { _id, card, category, donatedAmount, petImaage, petName } = myDonation;
+
+  const axiosSecure = useAxiosSecure();
+
+  const { data: myDonations = [], refetch } = useQuery({
+    queryKey: ["myDonations"],
+    queryFn: async () => {
+      const res = await axiosSecure.get("/myDonations");
+      return res.data;
+    },
+  });
+
+  const handleDelete = (id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.delete(`/myDonations/${id}`).then((res) => {
+          if (res.data.deletedCount > 0) {
+            refetch();
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your file has been deleted.",
+              icon: "success",
+            });
+          }
+        });
+      }
+    });
+  };
+
+
   return (
     <div>
-      <div
-        className="m-2 p-0 mb-20 rounded-lg border-2 border-state-700 shadow-lg shadow-slate-500 bg-"
-      >
-        <img className='w-full lg:h-[190px] h-full rounded-t-lg' src={petImage} alt="petimage" />
+      <div className="m-2 p-0 mb-20 rounded-lg border-2 border-state-700 shadow-lg shadow-slate-500 bg-">
+        <img
+          className="w-full lg:h-[190px] h-full rounded-t-lg"
+          src={petImaage}
+          alt="petimage"
+        />
 
         <div className="p-4">
           <a href="#">
@@ -28,7 +60,7 @@ const AllPetsCard = ({ pet }) => {
               {petName}
             </h5>
           </a>
-          <div className="mb-5 mt-2.5 flex items-center">
+          <div className="mb- mt-2.5 flex items-center">
             <svg
               className="h-5 w-5 text-yellow-300"
               fill="currentColor"
@@ -73,19 +105,31 @@ const AllPetsCard = ({ pet }) => {
               5.0
             </span>
           </div>
-          <div className="flex items-center justify-between">
-            <span className="text-2xl font-semibold text-gray-900 dark:text-white">
-              Age: {petAge}
+          <div className="flex-row items-center mt-0 justify-between">
+            <span className="text-lg font-semibold text-gray-900 dark:text-white">
+              Donation Amount :{" "}
+              <span className="text-xl font-bold">${donatedAmount}</span>
             </span>
+          </div>
 
-            <Link to={`/allPets/${_id}`}>
+          <div className="flex justify-between items-center">
+            <div>
+              <Link>
+                <button              
+                  className="rounded-lg text-gray-50 bg-slate-700 mt-4 px-3 py-2"
+                >
+                  Card - {card}
+                </button>
+              </Link>
+            </div>
+            <div>
             <button
-              href="#"
-              className="rounded-lg text-gray-50 bg-slate-700 px-3 py-2"
-            >
-              Adopt details
-            </button></Link>
-
+                  onClick={() => handleDelete(myDonation._id)}
+                  className="rounded-lg text-gray-50 bg-red-700 mt-4 px-3 py-2"
+                >
+                  Delete
+                </button>
+            </div>
           </div>
         </div>
       </div>
@@ -93,4 +137,4 @@ const AllPetsCard = ({ pet }) => {
   );
 };
 
-export default AllPetsCard;
+export default MyDonationsCard;

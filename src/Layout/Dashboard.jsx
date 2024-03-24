@@ -66,18 +66,19 @@ const Dashboard = () => {
               <NavLink to="/dashboard/addCarts" className="flex items-center gap-10">
 
              <p className="flex items-center gap-2"> <FaCartPlus /> My Cart</p>
-                    <p className="text-lg text-red-50 font-semibold ">
+                    <p className="text-lg  font-semibold ">
                        +{cart.length}
                     </p>
                   </NavLink>
               </li>
 
               <li className="p-2">
-              <NavLink to="/dashboard/addDonations" className="flex items-center gap-10">
+
+              <NavLink to="/dashboard/myDonations" className="flex items-center gap-10">
 
              <p className="flex items-center gap-2">
              <BiSolidDonateHeart />My Donations</p>
-                    <p className="text-lg text-red-50 font-semibold ">
+                    <p className="text-lg font-semibold ">
                       +
                     </p>
                   </NavLink>
@@ -113,111 +114,7 @@ const Dashboard = () => {
         </ul>
       </div>
 
-      {/* <div className="bg-fuchsia-600">
-        {isAdmin ? (
-          <>
-            <Sidebar
-              aria-label="Sidebar with content separator example"
-              className="min-h-screen bg-fuchsia-700"
-            >
-              <Sidebar.Items className="">
-                <Sidebar.ItemGroup>
-                  <NavLink to="/dashboard/adminHome" className="">
-                    <Sidebar.Item icon={HiChartPie}>Admin Home</Sidebar.Item>
-                  </NavLink>
-
-                  <NavLink to="/dashboard/manageAllPets">
-                    <Sidebar.Item icon={HiViewBoards}>All pets</Sidebar.Item>
-                  </NavLink>
-
-                  <NavLink to="/dashboard/allDonations">
-                    <Sidebar.Item href="" icon={HiInbox}>
-                      All Donations
-                    </Sidebar.Item>
-                  </NavLink>
-
-                  <NavLink to="/dashboard/allUsers">
-                    <Sidebar.Item href="#" icon={HiUser}>
-                      Users
-                    </Sidebar.Item>
-                  </NavLink>
-
-                  <NavLink>
-                    <Sidebar.Item href="" icon={HiShoppingBag}>
-                      Add pets
-                    </Sidebar.Item>
-                  </NavLink>
-
-                  <Sidebar.Item href="" icon={HiArrowSmRight}>
-                    Update
-                  </Sidebar.Item>
-                </Sidebar.ItemGroup>
-
-                <Sidebar.ItemGroup>
-                  <NavLink to="/">
-                    <Sidebar.Item href="" icon={HiChartPie}>
-                      Home
-                    </Sidebar.Item>
-                  </NavLink>
-                  <Sidebar.Item href="" icon={HiViewBoards}>
-                    Documentation
-                  </Sidebar.Item>
-                  <Sidebar.Item href="" icon={BiBuoy}>
-                    Help
-                  </Sidebar.Item>
-                </Sidebar.ItemGroup>
-              </Sidebar.Items>
-            </Sidebar>
-          </>
-        ) : (
-          <>
-            <Sidebar
-              aria-label="Sidebar with content separator example"
-              className="min-h-screen bg-fuchsia-700"
-            >
-              <Sidebar.Items className="">
-                <Sidebar.ItemGroup>
-                  <NavLink to="/dashboard" className="">
-                    <Sidebar.Item icon={HiChartPie}>
-                      User Dashboard
-                    </Sidebar.Item>
-                  </NavLink>
-
-                  <NavLink to="/dashboard/addCarts">
-                    <Sidebar.Item href="" icon={HiTable} label={cart.length}>
-                      My Cart
-                    </Sidebar.Item>
-                  </NavLink>
-
-                  <NavLink>
-                    <Sidebar.Item href="" icon={HiShoppingBag}>
-                      My Donation
-                    </Sidebar.Item>
-                  </NavLink>
-
-                  <Sidebar.Item href="" icon={HiArrowSmRight}>
-                    Sign In
-                  </Sidebar.Item>
-                </Sidebar.ItemGroup>
-
-                <Sidebar.ItemGroup>
-                  <NavLink to="/">
-                    <Sidebar.Item href="" icon={HiChartPie}>
-                      Home
-                    </Sidebar.Item>
-                  </NavLink>
-                  <Sidebar.Item href="" icon={HiViewBoards}>
-                    Documentation
-                  </Sidebar.Item>
-                  <Sidebar.Item href="" icon={BiBuoy}>
-                    Help
-                  </Sidebar.Item>
-                </Sidebar.ItemGroup>
-              </Sidebar.Items>
-            </Sidebar>
-          </>
-        )}
-      </div> */}
+    
 
       <div className="flex-1 p-8">
         <Outlet></Outlet>

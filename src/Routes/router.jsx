@@ -20,6 +20,7 @@ import PrivateRoute from "./PrivateRoute";
 import AddPets from "../pages/Dashboard/Dashboard/AdminDashboard/AddPets";
 import AdminRoute from "./AdminRoute";
 import UpdatePet from "../pages/Dashboard/Dashboard/AdminDashboard/UpdatePet";
+import MyDonations from "../pages/Dashboard/Dashboard/UsersDashboard/MyDonations";
 
 
 const router = createBrowserRouter([
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
       {
         path: "addCarts",
         element: <AddCard></AddCard>
+      },
+      {
+        path: "myDonations",
+        element: <MyDonations></MyDonations>
       },
     ]
   }
