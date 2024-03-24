@@ -114,6 +114,16 @@ const AllUsers = () => {
                   </Table.Cell>
                 )}
 
+               {/* <div className="flex justify-center items-center text-semibold">
+               {user.role === "admin" ? (
+                 <p className="text-sky-700 font-semibold bg-slate-300 p-2 rounded-lg flex justify-center items-center mt-2"> Admin </p>
+                ) : (
+                  <Table.Cell className="font-semibold bg-slate-300 p-2 rounded-lg flex justify-center items-center mt-2" onClick={() => handleMakeAdmin(user)}>
+                    User
+                  </Table.Cell>
+                )}
+               </div> */}
+
                 <Table.Cell>
                   <a
                     onClick={() => handleDeleteUser(user)}

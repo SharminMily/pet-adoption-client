@@ -2,9 +2,11 @@ import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import useAdmin from "../../../hooks/useAdmin";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [isAdmin] = useAdmin();
 
   const handleLogOut = () => {
     logOut()
@@ -53,7 +55,7 @@ const Header = () => {
         </NavLink>
       </li>
 
-      <li>
+      {/* <li>
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
@@ -64,7 +66,39 @@ const Header = () => {
         >
           Dashboard
         </NavLink>
+      </li> */}
+
+       {
+        user && isAdmin && <li>
+        <NavLink
+          to="/dashboard/adminHome"
+          className={({ isActive }) =>
+            isActive
+              ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+              : " font-semibold text-base hover:text-gray-600"
+          }
+        >
+          Dashboard
+        </NavLink>
       </li>
+       }
+
+       {
+        user && !isAdmin && <li>
+        <NavLink
+          to="/dashboard/userHome"
+          className={({ isActive }) =>
+            isActive
+              ? " font-semibold text-base hover:text-gray-600 border-b-2 border-gray-700"
+              : " font-semibold text-base hover:text-gray-600"
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
+       }
+
+
 
       <li>
         <NavLink

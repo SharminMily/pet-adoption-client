@@ -30,7 +30,7 @@ const Dashboard = () => {
             <ul className="menu gap-2 py-6 px-2 text-base">
               <li className="flex items-center gap-2 pb-6">
                 <IoHome />
-                <NavLink to="/dashboard">Admin Home</NavLink>
+                <NavLink to="/dashboard/adminHome">Admin Home</NavLink>
               </li>
               <li className="flex items-center gap-2 pb-6">
                 <GiCat />
@@ -48,10 +48,10 @@ const Dashboard = () => {
                 <HiUserGroup />
                 <NavLink to="/dashboard/allUsers">All Users</NavLink>
               </li>
-              <li className="flex items-center gap-2 pb-6">
+              {/* <li className="flex items-center gap-2 pb-6">
                 <FaDonate />
                 <NavLink to="/dashboard/">Payment</NavLink>
-              </li>
+              </li> */}
             </ul>
           </>
         ) : (
@@ -59,7 +59,7 @@ const Dashboard = () => {
             <ul>
               <li className="flex items-center gap-2 pb-3 mt-10 p-2">
                 <IoHome />
-                <NavLink to="/dashboard">User Home</NavLink>
+                <NavLink to="/dashboard/userHome">User Home</NavLink>
               </li>
 
               <li className="p-2">
