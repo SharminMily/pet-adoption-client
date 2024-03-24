@@ -48,6 +48,10 @@ const Dashboard = () => {
                 <HiUserGroup />
                 <NavLink to="/dashboard/allUsers">All Users</NavLink>
               </li>
+              <li className="flex items-center gap-2 pb-6">
+                <FaDonate />
+                <NavLink to="/dashboard/">Payment</NavLink>
+              </li>
             </ul>
           </>
         ) : (

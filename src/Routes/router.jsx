@@ -19,6 +19,7 @@ import AddCard from "../pages/Dashboard/Dashboard/UsersDashboard/AddCard";
 import PrivateRoute from "./PrivateRoute";
 import AddPets from "../pages/Dashboard/Dashboard/AdminDashboard/AddPets";
 import AdminRoute from "./AdminRoute";
+import UpdatePet from "../pages/Dashboard/Dashboard/AdminDashboard/UpdatePet";
 
 
 const router = createBrowserRouter([
@@ -84,6 +85,11 @@ const router = createBrowserRouter([
       {
         path: "addPets",
         element: <AdminRoute> <AddPets></AddPets> </AdminRoute>
+      },
+      {
+        path: "updatePet/:id",
+        element: <AdminRoute> <UpdatePet></UpdatePet> </AdminRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/allPets/${params.id}`)
       },
 
       {

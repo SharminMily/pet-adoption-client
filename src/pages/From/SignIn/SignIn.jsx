@@ -96,7 +96,7 @@ const SignIn = () => {
               </div>
 
               <button
-                className="bg-fuchsia-900 text-white font-semibold py-2 rounded-lg hover:bg-fuchsia-950"
+                className="bg-[#b9bece]  font-semibold py-2 rounded-lg hover:bg-slate-300"
                 type="submit"
               >
                 Submit
@@ -104,7 +104,7 @@ const SignIn = () => {
             </form>
             <p className="text-center">
            
-             --------- Have a Account <Link className="text-fuchsia-900 font-semibold" to="/signUp">signUp ---------</Link>
+             --------- Have a Account <Link className="text- font-semibold" to="/signUp">signUp ---------</Link>
             </p>
 
             <SocialAccount></SocialAccount>

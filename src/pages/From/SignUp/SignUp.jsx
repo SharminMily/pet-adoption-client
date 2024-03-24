@@ -157,14 +157,14 @@ const SignUp = () => {
                 <Label htmlFor="remember">Remember me</Label>
               </div>
               <button
-                className="bg-fuchsia-900 text-white font-semibold py-2 rounded-lg hover:bg-fuchsia-950"
+                className="border-[#DCE0EB] fint-bold bg-[#b5b9c7] font-semibold py-2 rounded-lg hover:bg-slate-300"
                 type="submit"
               >
                 Submit
               </button>
             </form>
             <p className="text-center">
-              Create a Account <Link className="text-fuchsia-900 font-semibold text-lg" to="/signIn">signIn</Link>
+              Create a Account <Link className="text- font-semibold text-lg" to="/signIn">signIn</Link>
             </p>
           </Card>
         </div>

@@ -78,12 +78,12 @@ const AllPetsDetails = () => {
     return (
         <div className="my-20">
              <h1 className="text-3xl text-center m-16  font-semibold">
-        Pet <span className="text-fuchsia-700 font-bold">Details</span>{" "}
+        Pet <span className="text- font-bold">Details</span>{" "}
         Here
       </h1>
 
       <div className="flex justify-center pb-20">
-        <div className="max-w-4xl lg:flex  justify-between  border-4 border-fuchsia-700 shadow-xl shadow-slate-500">
+        <div className="max-w-4xl lg:flex  justify-between  border-4  shadow-xl shadow-slate-500">
           <div className="lg:w-1/3">
             <img className="w-full h-full" src={petImage} alt="" />
           </div>
@@ -91,14 +91,14 @@ const AllPetsDetails = () => {
           <div className="lg:w-2/3 px-8 py-2">
             <h5 className="text-xl tracking-tight text-gray-900 dark:text-white">
               Category :
-              <span className="text-xl text-fuchsia-700 font-bold">
+              <span className="text-xl text- font-bold">
                 {" "}
                 {category}
               </span>
             </h5>
             <h5 className="text-xl tracking-tight text-gray-900 dark:text-white">
               Pet Name :
-              <span className="text-xl text-fuchsia-700 font-bold">
+              <span className="text-xl text- font-bold">
                 {" "}
                 {petName}
               </span>
@@ -106,7 +106,7 @@ const AllPetsDetails = () => {
 
             <h5 className="text-xl tracking-tight text-gray-900 dark:text-white">
               Pet Age :
-              <span className="text-xl text-fuchsia-700 font-bold">
+              <span className="text-xl text- font-bold">
                 {" "}
                 {petAge} years
               </span>
@@ -114,7 +114,7 @@ const AllPetsDetails = () => {
            
             <h5 className="text-xl tracking-tight text-gray-900 dark:text-white pb-2">
               Pet Location :
-              <span className="text-xl text-fuchsia-700 font-bold ">
+              <span className="text-xl text- font-bold ">
                 {" "}
                 {petLocation}
               </span>
@@ -125,7 +125,7 @@ const AllPetsDetails = () => {
             </p>
 
             <button onClick={handleAddCart}              
-              className="bg-fuchsia-900 text-white font-semibold w-full rounded-lg p-2 mt-2 hover:bg-fuchsia-950"
+              className="bg-slate-400  font-semibold w-full rounded-lg p-2 mt-2 hover:bg-slate-500"
               type="submit"
             >
               Adopt
