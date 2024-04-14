@@ -137,7 +137,7 @@ const SignUp = () => {
                   <Label htmlFor="photoURL" value="Your PhotoURL" />
                 </div>
                 <TextInput
-                  {...register("text", { required: true })}
+                  {...register("photoURL", { required: true })}
                   id="email1"
                   type="text"
                   placeholder="PhotoURL"

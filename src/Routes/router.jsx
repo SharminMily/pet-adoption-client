@@ -61,8 +61,7 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
-      },
-      
+      },      
      
       
     ],
@@ -96,7 +95,7 @@ const router = createBrowserRouter([
       },
       {
         path: "addPets",
-        element: <AdminRoute> <AddPets></AddPets> </AdminRoute>
+        element: <AddPets></AddPets> 
       },
       {
         path: "updatePet/:id",

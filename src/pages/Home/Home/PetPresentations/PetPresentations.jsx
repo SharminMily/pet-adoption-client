@@ -11,7 +11,7 @@ const PetPresentations = () => {
           <div className="shadow-xl shadow-slate-700">
             <div className="lg:flex ">
             <div className="lg:1/3">
-                <img
+                <img data-aos="zoom-in-right"
                   className="w-full h-full"
                   src="https://i.ibb.co/t8wGpF0/photo-1606593182050-2405e76f3ea4-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
                   alt=""
@@ -73,7 +73,7 @@ const PetPresentations = () => {
               </div>
 
               <div className=";g:1/3">
-                <img
+                <img data-aos="zoom-in-left"
                   className="w-full h-full"
                   src="https://i.ibb.co/3cpH7WF/photo-1607907085978-64ecc7ca503b-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
                   alt=""

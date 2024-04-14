@@ -1,10 +1,32 @@
 import { Button, Timeline } from "flowbite-react";
+import { useState } from "react";
 import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
 
 const About = () => {
+
+  // const [inputValue, setInputValue] = useState('');
+
+  // const handleInputChange = (event) => {
+  //   setInputValue(event.target.value);
+  // };
     return (
         <div className="mx-8 my-16">
-         
+
+         {/* <div className="m-20">
+         <div>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
+        placeholder="Type something..."
+      />
+      <div>
+        <h2>Data:</h2>
+        <p>{inputValue}</p>
+      </div>
+    </div>
+         </div> */}
+
 
             <Timeline>
 

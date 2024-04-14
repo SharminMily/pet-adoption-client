@@ -12,8 +12,8 @@ const Pets = () => {
 
       <div className="grid lg:grid-cols-4 grid-cols-2  justify-center md:gap-4 gap-1">
         {/* 1 */}
-        <div className="">
-          <Card className="max-w-sm bg-[#c5c9d3]">
+        <div className="" >
+          <Card data-aos="zoom-in-down" data-aos-duration="1000" className="max-w-sm bg-[#c5c9d3] hover:bg-slate-400">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -39,7 +39,7 @@ const Pets = () => {
 
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-[#c5c9d3]">
+          <Card data-aos="zoom-in-down" data-aos-duration="1000" className="max-w-sm bg-[#c5c9d3] hover:bg-slate-400">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -63,7 +63,7 @@ const Pets = () => {
 
         {/* 3 */}
         <div className="">
-          <Card className="max-w-sm bg-[#c5c9d3]">
+          <Card data-aos="zoom-in-down" data-aos-duration="1000" className="max-w-sm bg-[#c5c9d3] hover:bg-slate-400">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img
@@ -87,7 +87,7 @@ const Pets = () => {
 
         {/* 1 */}
         <div className="">
-          <Card className="max-w-sm bg-[#c5c9d3]">
+          <Card data-aos="zoom-in-down" data-aos-duration="1000"  className="max-w-sm bg-[#c5c9d3] hover:bg-slate-400">
             <div className="flex justify-end px-2 pt-0 "></div>
             <div className="flex flex-col items-center pb-2">
               <img

@@ -49,16 +49,7 @@ const AdminHome = () => {
   const { user } = useContext(AuthContext);
   const axiosSecure = useAxiosSecure();
 
-  //     const {data: stats} = useQuery({
-  //         queryKey: ['admin-stats'],
-  //         queryFn: async() => {
-  //             const res = await axiosSecure.get('/admin-stats');
-  //             return res.data;
-  //         }
-  //     })
-  // console.log(stats)
-
-  const [stats, setStats] = useState([]);
+    const [stats, setStats] = useState([]);
 
   useEffect(() => {
     fetch("https://pet-adoptions-server.vercel.app/admin-stats")

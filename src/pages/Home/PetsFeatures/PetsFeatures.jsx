@@ -47,7 +47,9 @@ const PetsFeatures = () => {
         </div>
         {/* 2 */}
         <div>
-          <img
+          <img data-aos="zoom-in"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
             className="w-full h-full"
             src="https://i.ibb.co/XXJK7F4/photo-1526336024174-e58f5cdd8e13-blend-000000-blend-alpha-10-blend-mode-normal-blend-w-1-crop-faces.jpg"
             alt=""

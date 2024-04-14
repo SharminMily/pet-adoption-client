@@ -17,7 +17,8 @@ const AllPetsCard = ({ pet }) => {
   } = pet;
   return (
     <div>
-      <div
+      <div 
+     data-aos-duration="1000" data-aos="zoom-out"
         className="m-2 p-0 mb-20 rounded-lg border-2 border-state-700 shadow-lg shadow-slate-500 bg-"
       >
         <img className='w-full lg:h-[190px] md:h-[170px] h-full rounded-t-lg' src={petImage} alt="petimage" />

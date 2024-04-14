@@ -10,7 +10,7 @@ import {
 const SimpleFooter = () => {
   return (
     <div>
-      <Footer className="bg-[#c4c8d3] " container>
+      <Footer className="bg-[#c4c8d3] rounded-none" container>
         <div className="w-full ">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 ">
             <div>

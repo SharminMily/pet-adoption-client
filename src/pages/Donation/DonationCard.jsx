@@ -19,7 +19,7 @@ const DonationCard = ({ donation }) => {
  
   return (
     <div>
-      <div className="m-4 p-0 mb-20 rounded-lg border-2  shadow-lg shadow-slate-500 ">
+      <div data-aos="fade-up"   data-aos-duration="1000" className="m-4 p-0 mb-20 rounded-lg border-2  shadow-lg shadow-slate-500 ">
         <img
           className="w-full lg:h-[190px] h-full rounded-t-lg"
           src={petImage}

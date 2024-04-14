@@ -38,7 +38,8 @@ const googleSignIn = () => {
 
        const updateUserProfile = (name, photo) => {
         return updateProfile(auth.currentUser, {
-            displayName: name, photoURl: photo
+            displayName: name, 
+            photoURL: photo
         })
     }
 

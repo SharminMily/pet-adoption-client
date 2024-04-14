@@ -85,8 +85,8 @@ const Dashboard = () => {
               </li>
 
               <li className="flex items-center gap-2 pb-2 p-2">
-              <AiFillFolderAdd />
-                <NavLink to="/dashboard">Add Pet</NavLink>
+              <GiCat />
+                <NavLink to="/dashboard/addPets">Add Pets</NavLink>
               </li>
 
             </ul>
@@ -103,13 +103,13 @@ const Dashboard = () => {
           </li>
           <li className="flex gap-2 items-center p-2 pb-4">
             <PiSignInBold />
-            <NavLink to="signIn" className="">
+            <NavLink to="/signIn" className="">
               sign in
             </NavLink>
           </li>
           <li className="flex gap-2 items-center p-2">
             <FaBookOpenReader />
-            <NavLink className="">About Us</NavLink>
+            <NavLink to="/about" className="">About Us</NavLink>
           </li>
         </ul>
       </div>
